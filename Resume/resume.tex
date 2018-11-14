@@ -1,0 +1,114 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.2 (3/28/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute 
+% (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Modified by:
+% Daniel L Marks <xleafr@gmail.com> 3/28/2015
+% 
+% Further modified by:
+% Rohan Bavishi <rohan.bavishi95@gmail.com> 9/20/2016
+%
+% Further further modified by:
+% Don Dennis <donkdennis@gmail.com> 10/05/2018
+%
+% Important note:
+% This template requires the simple_style.cls file to be in the same directory 
+% as the .tex file. The res.cls file provides the resume style used for 
+% structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can have multiple style options the legal options ones are:
+%
+%   centered:	the name and address are centered at the top of the page 
+%				(default)
+%
+%   line:		the name is the left with a horizontal line then the address to
+%				the right
+%
+%   overlapped:	the section titles overlap the body text (default)
+%
+%   margin:		the section titles are to the left of the body text
+%		
+%   11pt:		use 11 point fonts instead of 10 point fonts
+%
+%   12pt:		use 12 point fonts instead of 10 point fonts
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[mm, overlapped]{simple_style}
+% For more hacks, visit: 
+% https://robjhyndman.com/hyndsight/squeezing-space-with-latex/
+\linespread{0.972}
+
+% Default font is the helvetica postscript font
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage[right]{lineno}
+\hypersetup {
+    colorlinks=true,
+    linkcolor=colorlink,
+    filecolor=magenta,      
+    urlcolor=colorlink,
+}
+\usepackage[left=0.7in, right=1.0in, top=0.6in, bottom=0.6in]{geometry}
+% Increase text height
+\textheight=700pt
+
+\begin{document}
+% TO enable line numbers for review
+% \linenumbers
+
+%-------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%-------------------------------------------------------------------------------
+\name{Don Kurian Dennis}
+\advisors{\href{http://prateekjain.org}{Dr. Prateek Jain} \& \href{http://harsha-simhadri.org/}{Dr. Harsha Simhadri}}
+\qualificationone{Research Fellow, Machine Learning \& Optimization Group}
+\qualificationtwo{Microsoft Research India}
+\emailone{t-dodenn@microsoft.com}
+\emailtwo{donkdennis@gmail.com}
+\website{dkdennis.xyz}{\url{www.dkdennis.xyz}}
+\github{metastableB}{\url{www.github.com/metastableB}}
+\phone{}
+\updated{\today}
+
+
+\address{}
+%-------------------------------------------------------------------------------
+
+\begin{resume}
+\input{sections/education}
+\sectionline\input{sections/interests}
+\sectionline\input{sections/publications}
+\sectionline\input{sections/workshops}
+\sectionline\input{sections/experiance}
+\sectionline\input{sections/internships}
+\sectionline\input{sections/academic_projects}
+\sectionline\input{sections/entrepreneural}
+% \sectionline\input{sections/honours}
+% \sectionline\input{sections/positions}
+\end{resume}
+\end{document}
+
+% THings to add for 3 page version
+% Other achievements, MSR Summer School Mentor
+% NJACK coordinator and course instructor
+% Entrepreneural Experiance
+% Intern at Chironix
+% Weave
