@@ -1,0 +1,26 @@
+\newcommand{\grad}[1]{\nabla{#1}}
+\newcommand{\vc}[1]{\mathbf{{#1}}}
+\newcommand{\real}{{\rm I\!R}}
+% Partial derivative
+\newcommand{\pder}[2]{\frac{\partial{#1}}{\partial{#2}}}
+
+% Q and A
+\newcommand{\qanda}[2]{\textbf{Q:} #1\par\textbf{Ans:} #2\par}
+% Todo and notes
+% Documentation of todo notes and a few examples are here
+% https://tex.stackexchange.com/a/355700
+%
+% Todo-inline-green
+\newcommand{\todoiny}[1]
+  {\todo[inline, bordercolor=yellow, backgroundcolor=yellow!20]{#1}}
+\newcommand{\todoy}[1]
+  {\todo[bordercolor=yellow, backgroundcolor=yellow!20]{#1}}
+
+% Define a \tag command to tag equations inside align*. You also have to label
+% Also, when referring to equations, use \eqref{label}
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+% Theorem, lemmas and remarks
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark}
