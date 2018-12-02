@@ -7,9 +7,9 @@
 \usepackage{parskip}
 \usepackage[margin=0.8in]{geometry}
 % For header and footer
-\usepackage{titleps}
+\usepackage{fancyhdr}
 % Self explanatory
-\usepackage[textsize=tiny, textwidth=1.5in]{todonotes}
+\usepackage[textsize=t, textwidth=1.5in]{todonotes}
 \usepackage[backend=biber, style=ieee]{biblatex}
 \addbibresource{ref.bib}
 % Tikz from pyplot, plotting
@@ -20,22 +20,14 @@
 % Custom commands
 \usepackage{mymacros}
 % Title in header footer
-\newpagestyle{ruled}{%
-  \sethead{}{%
-      \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}cr}
-          \textit{\textbf{Don} Kurian Dennis} &
-          \textbf{} &
-          \textit{\textbf{Microsoft Research}}
-      \end{tabular*}
-          % \textit{Don Kurian Dennis}\hfill{}
-          % \textbf{Statement of Purpose}\hfill{}
-          % \textit{PhD Applicant, Machine Learning}
-  }{}
-  \headrule{}
-  % \setfoot{}{
-  %     \textit{Microsoft Research India}}{}
-  % \footrule
-}\pagestyle{ruled}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Microsoft Research}
+\lhead{Don Kurian Dennis}
+\chead{PhD Applicant, Machine Learning Department}
+\rfoot{}
+\def\bibfont{\footnotesize}
+
 
 \begin{document}
 \begin{center}
@@ -164,6 +156,5 @@ ultrices dolor pretium eget. Nulla facilisi. Nulla porta neque risus, eu
 finibus elit varius vitae. Praesent sodales placerat tellus, sed tempus nisi
 cursus ac. Nunc eget dolor mauris. Praesent vitae sodales ipsum.
 
-% Weird error causes REFERENCES to be printed twice. Help Wanted
-%\printbibliography{}
+\printbibliography{}
 \end{document}
